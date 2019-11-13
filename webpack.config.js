@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin   = require('clean-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: './src/index.jsx',
@@ -87,8 +88,11 @@ module.exports = {
             filename: 'style.[chunkhash].css'
         }),
         new CleanWebpackPlugin(['dist'], {
-            root: path.join(__dirname, '..')
+            root: path.join(__dirname, '.')
         }),
-        new CompressionPlugin()
+        new CompressionPlugin(),
+        new CopyPlugin([
+            { from: './logos/', to: './assets/' },
+          ])
     ]
 }
