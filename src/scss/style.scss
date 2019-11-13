@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500&display=swap');
+
+$commonFont: 'Work Sans', sans-serif;
+$commonFontSize: 16px;
+$commonTextColor: rgba(71,82,94,1);
+
+$bodyBg: rgba(243, 243, 243, 1);
+
+html, body {
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	font-size: $commonFontSize;
+	font-family: $commonFont;
+	color: $commonTextColor;
+	background: $bodyBg;
+	user-select: none;
+	@extend .legibility;
+}
+* {
+	box-sizing: border-box;
+}
+.fullWidth {
+	float: left;
+	width: 100%;
+}
+.fullHeight {
+	height: 100%;
+}
+.textCenter {
+	text-align: center;
+}
+.legibility {
+	font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+.container {
+	margin: 0 auto;
+	@media only screen and (min-width: 768px) {
+		width: 720px;
+	}
+	@media only screen and (min-width: 992px) {
+		width: 940px;
+	}
+	@media only screen and (min-width: 1200px) {
+		width: 1140px;
+	}
+	@media only screen and (min-width: 1600px) {
+		width: 1440px;
+	}
+}
