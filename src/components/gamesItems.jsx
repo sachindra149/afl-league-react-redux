@@ -28,7 +28,7 @@ class GamesComponent extends Component {
 		let awayTeam = this.props.teams.filter((item) => item.name === this.props.data.ateam);
 		const GamesMainContainer = styled.div`
 			float: left;
-			width: 100%;
+			width: calc(100% - 60px);
 			padding: 15px;
 			margin: 0px 15px 15px 15px;
 			background: #ffffff;
