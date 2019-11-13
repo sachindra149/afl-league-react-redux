@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { LogoImage } from '../style/styled.jsx';
-
 import '../scss/header.scss';
 
 class Header extends Component {
