@@ -14,7 +14,7 @@ class Header extends Component {
 		return (
 			<TopHeader className="fullWidth">
 				<div className="container textCenter">
-					<LogoImage src={`./src/assets/${this.props.homeTeamLogo}.png`} alt={`${this.props.homeTeamName}`} title={`${this.props.homeTeamName}`} />
+					<LogoImage src={`../logos/${this.props.homeTeamLogo}.png`} alt={`${this.props.homeTeamName}`} title={`${this.props.homeTeamName}`} />
 				</div>
 			</TopHeader>
 		)

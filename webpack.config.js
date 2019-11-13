@@ -45,13 +45,13 @@ module.exports = {
                 ]
             }, 
             {
-                test: /\.(png|jpg|jpeg|gif|svg)$/,
+                test: /\.(svg|jpg|jpeg|gif|png)$/,
                 use: [
                     {
                         loader: 'file-loader',
                         options: {
                             name: '[name].[ext]',
-                            outputPath: 'assets/images/'
+                            outputPath: 'assets/'
                         }
                     }
                 ]
