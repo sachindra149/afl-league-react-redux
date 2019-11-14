@@ -10,6 +10,9 @@ const FullWidthSection = styled.section`
 	float: left;
 	width: 100%;
 	padding: 50px 0px 75px 0px;
+	@media only screen and (max-width: 767px) {
+		padding: 25px 0px 75px 0px;
+	}
 `;
 
 const LogoImage = styled.img`

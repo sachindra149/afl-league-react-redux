@@ -13,7 +13,7 @@ let axiosConfig = {
 };
 
 export function getGames() {
-	return axios.get('https://api.squiggle.com.au/?q=games', axiosConfig)
+	return axios.get('https://cors-anywhere.herokuapp.com/https://api.squiggle.com.au/?q=games', axiosConfig)
 		.then((response) => {
 			store.dispatch(getGamesList(response))
 		})
@@ -27,7 +27,7 @@ export function getGamesList(data) {
 }
 
 export function getTeams() {
-	return axios.get('https://api.squiggle.com.au/?q=teams', axiosConfig)
+	return axios.get('https://cors-anywhere.herokuapp.com/https://api.squiggle.com.au/?q=teams', axiosConfig)
 		.then((response) => {
 			store.dispatch(getTeamLogo(response))
 		})
